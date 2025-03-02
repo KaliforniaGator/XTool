@@ -1,5 +1,4 @@
 # X: A Convenient Alternative to the Clear Command
-==============================================
 
 X is a lightweight, command-line utility that quickly clears the terminal screen with a simple and convenient syntax.
 
