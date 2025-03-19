@@ -1,12 +1,8 @@
 #include <iostream>
 
-// Define the clear screen function for different operating systems
 void clearScreen() {
-    #ifdef _WIN32
-        std::cout << "\033[2J\033[1;1H";
-    #else
-        std::cout << "\033[2J\033[1;1H";
-    #endif
+    // Clears the screen and also the scrollback buffer
+    std::cout << "\033[2J\033[3J\033[H" << std::flush;
 }
 
 int main() {
